@@ -10,6 +10,6 @@ int main() {
 	for(;i < 10; ++i){
 		array[i] = i; 
 }
-printf(“final value: %d\n”,array[i]); // i=10 at this point, causing OOB array access.
+printf("final value: %d\n",array[i]); // i=10 at this point, causing OOB array access.
 return 0;
 }
