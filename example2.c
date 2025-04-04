@@ -6,6 +6,6 @@ int main() {
     exit(EXIT_FAILURE);
   }
 	free(data);
-	free(data);
+	free(data); // Double free causes runtime error
 return 0;
 }
