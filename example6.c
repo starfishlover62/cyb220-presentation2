@@ -1,9 +1,9 @@
 #include <stdio.h>
+#define SIZE 5
 
 int main() {
-    int array[5];
-    printf("%d",array[6]);
-
+    int array[SIZE];
+    printf("last element: %d\n",array[SIZE]);
 
 
     return 0;
