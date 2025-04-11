@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+
 int main() {
-  int* data;
-	if((data = malloc(sizeof(int)*10)) == 0){ // No longer an issue. Checks if malloc was successful
-    exit(EXIT_FAILURE);
-  }
+    int* data;
+    data = malloc(sizeof(int) * 10);
+    printf("%d",data[1]);
 	free(data);
-	free(data); // Double free causes runtime error
-return 0;
+    return 0;
 }
