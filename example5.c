@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-void loop(int array[10]) {
-    int i = 0;
-    while(1){
-        printf("%d\n",array[i]);
-        ++i;
+int recursive_fibonacci(int n){
+    if(n == 0){
+        return 0;
     }
+    if(n == 1){
+        return 1;
+    }
+    return(recursive_fibonacci(n) + recursive_fibonacci(n-1));
 }
 
 
 int main() {
-    int array[] = {1,2,3,4,5,6,7,8,9,0};
-    loop(array);
+    int num = recursive_fibonacci(10);
+    printf("10th element of fibonacci: %d\n",num);
     return 0;
 }
